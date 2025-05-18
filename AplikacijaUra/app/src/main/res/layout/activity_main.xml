@@ -1,0 +1,88 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp">
+
+
+        <TextView
+            android:id="@+id/timerText"
+            android:text="00:00"
+            android:textStyle="bold"
+            android:textSize="64sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/inputTime"
+            android:hint="Enter seconds"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:textSize="16sp"
+            android:backgroundTint="#444444" />
+
+
+        <Button
+            android:id="@+id/startTimerBtn"
+            android:text="Start Timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#FF9812"
+            android:textColor="#FFFFFF" />
+
+
+        <Button
+            android:id="@+id/stopTimerBtn"
+            android:text="Reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:enabled="false"
+            android:backgroundTint="#FF9812"
+            android:textColor="#FFFFFF" />
+
+
+        <TextView
+            android:id="@+id/alarmTimeText"
+            android:text="Alarm not set"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/setAlarmBtn"
+            android:text="Set Alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#FF9812"
+            android:textColor="#FFFFFF" />
+
+
+        <Button
+            android:id="@+id/openWorldClockBtn"
+            android:text="World Clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF9812"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
